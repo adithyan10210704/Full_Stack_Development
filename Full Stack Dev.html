@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .container input[type="text"],
+        .container input[type="email"],
+        .container input[type="password"],
+        .container select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container input[type="radio"] {
+            margin-right: 10px;
+        }
+        .container .gender {
+            margin-bottom: 10px;
+        }
+        .container .gender label {
+            display: inline;
+            font-weight: normal;
+        }
+        .container .checkbox {
+            margin-bottom: 10px;
+        }
+        .container .checkbox label {
+            display: inline;
+            font-weight: normal;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .container button:hover {
+            background-color: #0056b3;
+        }
+        .container .login {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .container .login a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .container .login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign up</h2>
+        <form action="/submit_form" method="POST">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <p style="font-size: 12px; color: gray;">We'll never share your email with anyone else.</p>
+            
+            <div class="gender">
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+            
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="India">India</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+            <label for="password">Create password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirmPassword">Repeat password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            
+            <div class="checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree with <a href="#">terms and conditions</a></label>
+            </div>
+            
+            <button type="submit">Register</button>
+        </form>
+        <div class="login">
+            <p>Have an account? <a href="#">Log In</a></p>
+        </div>
+    </div>
+</body>
+</html>
