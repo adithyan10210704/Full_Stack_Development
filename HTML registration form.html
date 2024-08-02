@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th {
+            text-align: left;
+            padding-bottom: 20px;
+            font-size: 24px;
+        }
+        td {
+            padding: 10px 0;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            width: calc(50% - 12px);
+            padding: 10px;
+            margin: 5px 1%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <th colspan="2">HTML Form</th>
+            </tr>
+            <tr>
+                <td>First Name :</td>
+                <td><input type="text" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td>Last Name :</td>
+                <td><input type="text" name="last_name" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth :</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+                <td>Email id :</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Mobile Number :</td>
+                <td><input type="text" name="mobile" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
