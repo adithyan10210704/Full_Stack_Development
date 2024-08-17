@@ -1,0 +1,57 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Dark background as shown in the example */
+}
+
+.form-container {
+    background-color: #111; /* Darker form background */
+    padding: 30px;
+    border: 2px solid #666;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+form h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+}
+
+form input::placeholder {
+    color: #888;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    padding: 10px 20px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #333;
+}
